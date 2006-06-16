@@ -1,0 +1,6 @@
+category: Gnome
+requires: cygwin GConf2 ORBit2 libgnome-menu2 gtk2-x11 libbonobo2 libglade2 libgnome-desktop2 libgnome2
+sdesc: "GNOME bug reporting tool"
+ldesc: "This is a graphical bug reporting tool for the GNOME desktop.  It can
+extract debugging information from a core file or crashed application
+(via gnome_segv)."
