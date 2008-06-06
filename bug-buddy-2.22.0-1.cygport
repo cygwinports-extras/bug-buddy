@@ -1,0 +1,7 @@
+inherit gnome2
+
+DESCRIPTION="GNOME bug reporting tool"
+
+DIFF_EXCLUDES="${PN}.menu"
+
+CYGCONF_ARGS="--disable-eds"
