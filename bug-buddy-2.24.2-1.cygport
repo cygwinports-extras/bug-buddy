@@ -2,6 +2,8 @@ inherit gnome2
 
 DESCRIPTION="GNOME bug reporting tool"
 
+PATCH_URI="2.22-no-libelf.patch"
+
 DIFF_EXCLUDES="${PN}.menu"
 
 CYGCONF_ARGS="--disable-eds"

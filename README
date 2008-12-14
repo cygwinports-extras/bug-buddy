@@ -5,35 +5,33 @@ extract debugging information from a core file or crashed application
 (via gnome_segv2).
 
 Runtime requirements:
-  cygwin-1.5.25-11
-  GConf2-2.22.0-1
-  ORBit2-2.14.12-1
-  gdk-pixbuf2-2.12.9-1
-  glib2-2.16.3-1
-  gnome-menus-2.22.2-1
-  gnome-vfs2-2.22.0-1
-  gtk2-x11-2.12.9-1
-  libX11_6-1.1.3-1
-  libbonobo2-2.22.0-1
-  libgnome2-2.22.0-1
-  libgnomeui2-2.22.1-1
+  cygwin-1.5.25-15
+  libbonobo2_0-2.24.0-1
+  libgconf2_4-2.24.0-1
+  libglib2.0_0-2.18.3-1
+  libgnome-menu2-2.24.2-1
+  libgnome2_0-2.24.1-1
+  libgnomeui2_0-2.24.0-1
+  libgtk2.0_0-2.14.5-1
   libgtop2-2.14.7-1
-  libintl8-0.15-1
-  libsoup24-2.4.1-1
-  libxml2-2.6.30-1
+  libintl8-0.17-2
+  libORBit2_0-2.14.16-1
+  libsoup2.4_1-2.24.2.1-1
+  libX11_6-1.1.5-1
+  libxml2-2.7.2-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
-  autoconf2.5-2.61-1
-  automake1.10-1.10-1
-  binutils-20050610-1
-  cygport-0.3.7-1
-  gawk-3.1.5-4
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
-  intltool-0.36.2-1
+  intltool-0.40.5-1
+  libtool-2.2.6a-1
   make-3.81-1
-  pkg-config-0.21-1
+  pkg-config-0.23a-2
   sed-4.1.5-2
 
 Canonical website:
@@ -45,15 +43,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack bug-buddy-2.22.0-X-src.tar.bz2
+  unpack bug-buddy-2.24.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./bug-buddy-2.22.0-X.cygport all
+  cygport ./bug-buddy-2.24.2-X.cygport all
 
 This will create:
-  /usr/src/bug-buddy-2.22.0-X-src.tar.bz2
-  /usr/src/bug-buddy-2.22.0-X.tar.bz2
+  /usr/src/bug-buddy-2.24.2-X-src.tar.bz2
+  /usr/src/bug-buddy-2.24.2-X.tar.bz2
 
 -------------------------------------------
 
@@ -68,7 +66,6 @@ Files included in the binary package:
   /usr/share/applications/bug-buddy.desktop
   /usr/share/bug-buddy/bug-buddy.gtkbuilder
   /usr/share/bug-buddy/bug-buddy.menu
-  /usr/share/bug-buddy/bug-buddy.png
   /usr/share/bug-buddy/bugzilla/gnome.bugzilla
   /usr/share/bug-buddy/bugzilla/gnome/config
   /usr/share/bug-buddy/bugzilla/gnome/mostfreq
@@ -78,14 +75,20 @@ Files included in the binary package:
   /usr/share/bug-buddy/bugzilla/ximian/mostfreq
   /usr/share/bug-buddy/bugzilla/ximian/products
   /usr/share/bug-buddy/gdb-cmd
-  /usr/share/doc/bug-buddy-2.22.0/AUTHORS
-  /usr/share/doc/bug-buddy-2.22.0/COPYING
-  /usr/share/doc/bug-buddy-2.22.0/ChangeLog
-  /usr/share/doc/bug-buddy-2.22.0/MAINTAINERS
-  /usr/share/doc/bug-buddy-2.22.0/NEWS
-  /usr/share/doc/bug-buddy-2.22.0/README
-  /usr/share/doc/bug-buddy-2.22.0/TODO
+  /usr/share/doc/bug-buddy-2.24.2/AUTHORS
+  /usr/share/doc/bug-buddy-2.24.2/COPYING
+  /usr/share/doc/bug-buddy-2.24.2/ChangeLog
+  /usr/share/doc/bug-buddy-2.24.2/MAINTAINERS
+  /usr/share/doc/bug-buddy-2.24.2/NEWS
+  /usr/share/doc/bug-buddy-2.24.2/README
+  /usr/share/doc/bug-buddy-2.24.2/TODO
+  /usr/share/icons/HighContrastLargePrint/48x48/apps/bug-buddy.png
+  /usr/share/icons/hicolor/16x16/apps/bug-buddy.png
+  /usr/share/icons/hicolor/22x22/apps/bug-buddy.png
+  /usr/share/icons/hicolor/24x24/apps/bug-buddy.png
+  /usr/share/icons/hicolor/32x32/apps/bug-buddy.png
   /usr/share/icons/hicolor/48x48/apps/bug-buddy.png
+  /usr/share/icons/hicolor/scalable/apps/bug-buddy.svg
   /usr/share/locale/af/LC_MESSAGES/bug-buddy.mo
   /usr/share/locale/am/LC_MESSAGES/bug-buddy.mo
   /usr/share/locale/ar/LC_MESSAGES/bug-buddy.mo
@@ -124,6 +127,7 @@ Files included in the binary package:
   /usr/share/locale/it/LC_MESSAGES/bug-buddy.mo
   /usr/share/locale/ja/LC_MESSAGES/bug-buddy.mo
   /usr/share/locale/ka/LC_MESSAGES/bug-buddy.mo
+  /usr/share/locale/kn/LC_MESSAGES/bug-buddy.mo
   /usr/share/locale/ko/LC_MESSAGES/bug-buddy.mo
   /usr/share/locale/ku/LC_MESSAGES/bug-buddy.mo
   /usr/share/locale/ky/LC_MESSAGES/bug-buddy.mo
@@ -143,6 +147,7 @@ Files included in the binary package:
   /usr/share/locale/or/LC_MESSAGES/bug-buddy.mo
   /usr/share/locale/pa/LC_MESSAGES/bug-buddy.mo
   /usr/share/locale/pl/LC_MESSAGES/bug-buddy.mo
+  /usr/share/locale/ps/LC_MESSAGES/bug-buddy.mo
   /usr/share/locale/pt/LC_MESSAGES/bug-buddy.mo
   /usr/share/locale/pt_BR/LC_MESSAGES/bug-buddy.mo
   /usr/share/locale/ro/LC_MESSAGES/bug-buddy.mo
@@ -153,7 +158,7 @@ Files included in the binary package:
   /usr/share/locale/sl/LC_MESSAGES/bug-buddy.mo
   /usr/share/locale/sq/LC_MESSAGES/bug-buddy.mo
   /usr/share/locale/sr/LC_MESSAGES/bug-buddy.mo
-  /usr/share/locale/sr@Latn/LC_MESSAGES/bug-buddy.mo
+  /usr/share/locale/sr@latin/LC_MESSAGES/bug-buddy.mo
   /usr/share/locale/sv/LC_MESSAGES/bug-buddy.mo
   /usr/share/locale/ta/LC_MESSAGES/bug-buddy.mo
   /usr/share/locale/te/LC_MESSAGES/bug-buddy.mo
@@ -168,10 +173,14 @@ Files included in the binary package:
   /usr/share/locale/zh_CN/LC_MESSAGES/bug-buddy.mo
   /usr/share/locale/zh_HK/LC_MESSAGES/bug-buddy.mo
   /usr/share/locale/zh_TW/LC_MESSAGES/bug-buddy.mo
+  /usr/share/man/man1/bug-buddy.1.gz
 
 ------------------
 
 Port Notes:
+
+----- version 2.24.2-1 -----
+Version bump for GNOME 2.24.
 
 ----- version 2.22.0-1 -----
 Version bump for GNOME 2.22.
