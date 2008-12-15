@@ -13,7 +13,7 @@ Runtime requirements:
   libgnome2_0-2.24.1-1
   libgnomeui2_0-2.24.0-1
   libgtk2.0_0-2.14.5-1
-  libgtop2-2.14.7-1
+  libgtop2.0_7-2.24.0-1
   libintl8-0.17-2
   libORBit2_0-2.14.16-1
   libsoup2.4_1-2.24.2.1-1
