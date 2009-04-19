@@ -1,0 +1,41 @@
+--- origsrc/bug-buddy-2.26.0/configure.in	2009-03-16 19:20:15.000000000 -0500
++++ src/bug-buddy-2.26.0/configure.in	2009-04-19 16:27:16.983750000 -0500
+@@ -73,8 +73,7 @@ AC_SUBST(BUG_BUDDY_EDS_LIBS)
+ 
+ 
+ AC_CHECK_LIB(elf, elf_version)
+-AC_CHECK_HEADERS([libelf.h],[],[AC_MSG_ERROR([libelf.h not found.])])
+-AC_CHECK_HEADERS([gelf.h],[],[AC_MSG_ERROR([gelf.h not found.])])
++AC_CHECK_HEADERS([libelf.h gelf.h])
+ 
+ AC_ARG_ENABLE([google-breakpad],
+ 	[AC_HELP_STRING([--enable-google-breakpad],
+--- origsrc/bug-buddy-2.26.0/gnome-breakpad/gnome-breakpad.cc	2009-02-26 18:56:50.000000000 -0600
++++ src/bug-buddy-2.26.0/gnome-breakpad/gnome-breakpad.cc	2009-04-19 16:26:31.077500000 -0500
+@@ -25,8 +25,10 @@
+ #include <cassert>
+ #include <cstring>
+ 
++#ifdef HAVE_LIBELF
+ #include <libelf.h>
+ #include <gelf.h>
++#endif
+ 
+ #include <sys/types.h>
+ #include <sys/stat.h>
+@@ -267,6 +269,7 @@ find_in_debug_path (const char *filename
+ static gboolean
+ elf_has_debug_symbols (const char *filename)
+ {
++#ifdef HAVE_LIBELF
+        int fd;
+        Elf *elf;
+        GElf_Ehdr elf_header;
+@@ -314,6 +317,7 @@ elf_has_debug_symbols (const char *filen
+ 
+        /* no symtab neither debug file present */
+        elf_end (elf);
++#endif
+        return false;
+ }
+ 

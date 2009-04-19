@@ -2,7 +2,8 @@ inherit gnome2
 
 DESCRIPTION="GNOME bug reporting tool"
 
-PATCH_URI="2.22-no-libelf.patch"
+PATCH_URI="2.26-no-libelf.patch
+           2.26-no-undefined.patch"
 
 DIFF_EXCLUDES="${PN}.menu"
 
