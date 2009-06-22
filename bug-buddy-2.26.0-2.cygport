@@ -6,5 +6,3 @@ PATCH_URI="2.26-no-libelf.patch
            2.26-no-undefined.patch"
 
 DIFF_EXCLUDES="${PN}.menu"
-
-CYGCONF_ARGS="--disable-eds"

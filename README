@@ -3,18 +3,19 @@ bug-buddy
 This is a graphical bug reporting tool for the GNOME desktop.
 
 Runtime requirements:
-  cygwin-1.7.0-45
+  cygwin-1.7.0-50
   libbonobo2_0-2.24.1-1
+  libebook1.2_9-2.26.2-1
   libgcc1-4.3.2-2
-  libgconf2_4-2.26.0-1
-  libglib2.0_0-2.20.0-1
+  libgconf2_4-2.26.2-1
+  libglib2.0_0-2.20.3-1
   libgnome-menu2-2.26.0-1
-  libgtk2.0_0-2.16.0-1
+  libgtk2.0_0-2.16.2-1
   libgtop2.0_7-2.26.1-1
   libintl8-0.17-10
   libORBit2_0-2.14.17-1
-  libpango1.0_0-1.24.0-1
-  libsoup2.4_1-2.26.0-1
+  libpango1.0_0-1.24.2-1
+  libsoup2.4_1-2.26.2-1
   libstdc++6-4.3.2-2
   libX11_6-1.2-10
   libxml2-2.7.3-10
@@ -22,13 +23,13 @@ Runtime requirements:
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-10
-  automake1.10-1.10.1-10
+  automake1.10-1.10.2-10
   binutils-20080624-2
-  cygport-0.9.6-1
+  cygport-0.9.7-1
   gawk-3.1.6-2
   gcc4-core-4.3.2-2
   intltool-0.40.6-1
-  libtool-2.2.7a-12
+  libtool-2.2.7a-13
   make-3.81-2
   pkg-config-0.23b-10
   sed-4.1.5-2
@@ -169,6 +170,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.26.0-2 -----
+Enabled Evolution Data Server support.
 
 ----- version 2.26.0-1 -----
 Initial release of GNOME 2.26 for Cygwin 1.7.
