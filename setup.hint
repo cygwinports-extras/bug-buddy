@@ -1,4 +1,4 @@
 category: Gnome
-requires: GConf2 libbonobo2_0 libebook1.2_9 libgcc1 libgconf2_4 libglib2.0_0 libgnome-menu2 libgtk2.0_0 libgtop2.0_7 libintl8 libORBit2_0 libpango1.0_0 libsoup2.4_1 libstdc++6 libX11_6 libxml2
+requires: GConf2 libbonobo2_0 libebook1.2_9 libgcc1 libgconf2_4 libglib2.0_0 libgtk2.0_0 libgtop2.0_7 libintl8 libORBit2_0 libpango1.0_0 libsoup2.4_1 libstdc++6 libX11_6 libxml2
 sdesc: "GNOME bug reporting tool"
 ldesc: "This is a graphical bug reporting tool for the GNOME desktop."
