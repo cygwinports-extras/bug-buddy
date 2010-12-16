@@ -1,8 +1,0 @@
---- origsrc/bug-buddy-2.26.0/gnome-breakpad/Makefile.am	2009-02-26 18:56:50.000000000 -0600
-+++ src/bug-buddy-2.26.0/gnome-breakpad/Makefile.am	2009-04-19 16:20:26.608750000 -0500
-@@ -38,4 +38,4 @@ moduledir = $(libdir)/gtk-2.0/modules
- 
- libgnomebreakpad_la_SOURCES = gnome-breakpad.cc $(GOOGLE_BREAKPAD_CC)
- libgnomebreakpad_la_LIBADD = $(GOOGLE_BREAKPAD_LIBS) $(GNOME_BREAKPAD_LIBS)
--libgnomebreakpad_la_LDFLAGS = -rpath $(moduledir) -module -avoid-version @LDFLAGS@
-+libgnomebreakpad_la_LDFLAGS = -rpath $(moduledir) -module -avoid-version -no-undefined @LDFLAGS@
